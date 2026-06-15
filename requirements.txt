@@ -1,0 +1,5 @@
+numpy>=1.21
+gdstk>=0.9
+# gdsfactory is optional: only needed to read a Component directly.
+# GDS files and JSON specs work without it.
+# gdsfactory>=6.0

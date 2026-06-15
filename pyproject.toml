@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdsqa"
+version = "0.1.0"
+description = "Quality-assurance checks for gdsfactory layouts and technology"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "James Sweeney" }]
+keywords = ["gdsfactory", "gds", "eda", "drc", "layout", "qa"]
+dependencies = ["numpy>=1.21", "gdstk>=0.9"]
+
+[project.optional-dependencies]
+gdsfactory = ["gdsfactory>=6.0"]
+dev = ["pytest"]
+
+[project.scripts]
+gdsqa = "gdsqa.cli:main"
+
+[tool.setuptools]
+packages = ["gdsqa"]
