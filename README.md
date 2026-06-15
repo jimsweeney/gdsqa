@@ -1,6 +1,6 @@
 # gdsqa - quality-assurance checks for gdsfactory
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+![tests](https://github.com/jimsweeney/gdsqa/actions/workflows/ci.yml/badge.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 `gdsqa` is a small QA suite for gdsfactory designs. It runs four families of checks behind one issue format
 and one CLI, catching the authoring mistakes that geometry DRC and netlist extraction miss:
